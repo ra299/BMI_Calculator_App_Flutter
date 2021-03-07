@@ -141,7 +141,7 @@ class _InputPageState extends State<InputPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           RoundIconButton(
-                              icon: FontAwesomeIcons.plus,
+                              icon: FontAwesomeIcons.minus,
                               onPressed: (){
                                 setState((){
                                   weight--;
@@ -152,7 +152,7 @@ class _InputPageState extends State<InputPage> {
                             width: 10.0
                           ),
                           RoundIconButton(
-                            icon: FontAwesomeIcons.minus,
+                            icon: FontAwesomeIcons.plus,
                             onPressed: (){
                               setState((){
                                 weight++;
@@ -167,7 +167,9 @@ class _InputPageState extends State<InputPage> {
               ),
               Expanded(
                 child: ReusableCard(
+                  colour: KActiveCardColour,
                   cardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
                         "AGE",
@@ -181,7 +183,7 @@ class _InputPageState extends State<InputPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           RoundIconButton(
-                            icon: FontAwesomeIcons.plus,
+                            icon: FontAwesomeIcons.minus,
                             onPressed: (){
                               setState((){
                                 age--;
@@ -192,7 +194,7 @@ class _InputPageState extends State<InputPage> {
                             width: 10.0,
                           ),
                           RoundIconButton(
-                            icon: FontAwesomeIcons.minus,
+                            icon: FontAwesomeIcons.plus,
                             onPressed: (){
                               setState((){
                                 age++;
@@ -203,7 +205,6 @@ class _InputPageState extends State<InputPage> {
                       )
                     ],
                   ),
-                  colour: KActiveCardColour,
                 ),
               ),
             ],
